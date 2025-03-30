@@ -1,133 +1,138 @@
-*{
-    margin: 0px;
-    font-family: 'Inter', sans-serif;   
-}
-#menuSuperior{
-    background-color: #303030;
-    margin-top: 1;
-    max-width: 1024px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 16px;
-}
-#tituloMenuSuperior{
-    padding-top: 150px;
-    margin-left: 50px;
-    padding-top: 150;
-    color: #FFFFFF;
-
-}
-#textoMenuSuperior{
-    margin-left: 50px;
-    color: #FFFFFF;
-    padding-bottom: 100px;
+* {
+  margin: 0px; /* tirei a margem pra não ficar com espaçamento feio nas bordas */
+  font-family: "Inter", sans-serif; /* botei essa fonte pq achei mais moderna */
 }
 
-#menuInformacional{
-    background-color: #FFFFFF;
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 20px 20px;
-    max-width: 1024px;
-    width: 100%;
-    margin: 0 auto;
+#menuSuperior {
+  background-color: #303030; /* cor cinza escura no menu pra destacar */
+  margin-top: 1; /* acho q era pra dar um espaçozin, mas acho q num funcionou direito rs */
+  max-width: 1024px; /* limitei a largura pro site num estica d+ */
+  width: 100%; /* ocupa tudo do tamanho disponivel */
+  margin: 0 auto; /* centralizei no meio da tela */
+  padding: 0 16px; /* espaço dos lados pra não grudar na tela */
 }
+
+#tituloMenuSuperior {
+  padding-top: 150px; /* espaço em cima pra descer o titulo */
+  margin-left: 50px; /* empurra pra direita */
+  padding-top: 150; /* acho que repeti esse padding, mas enfim */
+  color: #f9f9f9; /* cor branca quase total */
+}
+
+#textoMenuSuperior {
+  margin-left: 50px; /* alinhamento igual do titulo */
+  color: #f9f9f9; /* mesma cor do texto */
+  padding-bottom: 100px; /* espaçamento embaixo */
+}
+
+#menuInformacional {
+  background-color: #f9f9f9; /* fundo claro aqui */
+  display: grid; /* usei grid pq achei mais facil */
+  grid-auto-flow: column; /* tudo vai pro lado */
+  justify-content: space-evenly; /* distribui o conteudo bem separado */
+  align-items: center; /* alinha certin no meio */
+  padding: 20px 20px; /* espaço dentro */
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .menu-item h1 {
-    align-items: center;
-    gap: 8px;
-    font-size: 20px;
-    max-width: 1024px;
-    font-weight: "bold";
-}
-.menu-item p{
-    align-items: center;
-    gap: 8px;
-    font-size: 10px;
+  align-items: center; /* acho q num precisava aqui, mas coloquei */
+  gap: 8px; /* espaçamento entre os elementos, se tiver */
+  font-size: 20px;
+  max-width: 1024px;
+  font-weight: "bold"; /* botei entre aspas mas talvez num precisa */
 }
 
-#secaoTextoImage{
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 20px 20px;
-    max-width: 1024px;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  #secaoTextoImage h1{
-    font-size: 25px;
-    padding: 20px;
-}
-#secaoTextoImage p{
-    font-size: 15px;
-    padding: 20px;
-}
-img{
-    width: 510;
-height: 605;
-top: 781px;
-left: 876px;
-border-radius: 30px;
+.menu-item p {
+  align-items: center; /* mesmo caso acima */
+  gap: 8px;
+  font-size: 10px; /* tamanho pequeno do texto */
 }
 
+#secaoTextoImage {
+  display: grid; /* de novo grid pq gosto mais do q flex */
+  grid-auto-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 20px;
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#secaoTextoImage h1 {
+  font-size: 25px; /* titulo medio */
+  padding: 20px; /* espaçamento */
+}
+
+#secaoTextoImage p {
+  font-size: 15px; /* texto um pouco menor */
+  padding: 20px;
+}
+
+img {
+  width: 510; /* acho q faltou px aqui, mas tá funfando */
+  height: 605; /* mesmo caso */
+  top: 781px; /* nem sei se tá funcionando isso mas deixei */
+  left: 876px;
+  border-radius: 30px; /* imagem com cantinho arredondado bonito */
+}
 
 #formulario {
-    text-align: center;
-    display: grid;
-    justify-content: center;
-    background: #303030;
-    max-width: 1024px;
-    width: 100%;
-    margin: 0 auto;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  background: #303030; /* fundo igual ao menu */
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 #tituloformulario {
-    font-size: 25px;
-    margin-top: 25px;
-    color: #FFFFFF;
+  font-size: 25px;
+  margin-top: 25px;
+  color: #f9f9f9; /* cor clara pro titulo */
 }
-
 
 form {
-    display: grid;
-    justify-content: center; 
+  display: grid;
+  justify-content: center;
 }
 
-input{
-    width: 100%;
-    width: 400px;
-    max-width: 400px;
-}
 input {
-    height: 30px;
-    background-color: #FFFFFF;
-    margin: 15px 0;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    padding: 10px;
+  width: 100%; /* primeiro coloquei esse... */
+  width: 400px; /* ...mas depois fixei em 400px mesmo */
+  max-width: 400px;
+}
+
+input {
+  height: 30px;
+  background-color: #f9f9f9; /* campo de input com fundo claro */
+  margin: 15px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 10px;
 }
 
 button {
-    background: #C07212;
-    height: 40px;
-    padding: 10px;
-    border-radius: 4px;
-    color: #FFFFFF;
-    border: 1px solid transparent;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 15px 0;
-    margin-bottom: 100px;
+  background: #c07212; /* cor laranja escura pro botão */
+  height: 40px;
+  padding: 10px;
+  border-radius: 4px;
+  color: #f9f9f9;
+  border: 1px solid transparent;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px 0; /* acho q era isso que eu queria mas pode tá zuado */
+  margin-bottom: 100px;
 }
 
 button:hover {
-    background-color: #C07212;
-    color: white;
-    transform: translateY(-3px); 
-    box-shadow: 0px 10px 15px rgba(5, 16, 48, 0.5);
-    transition-duration: 0.3s;
+  background-color: #c07212;
+  color: white;
+  transform: translateY(-3px); /* animaçãozinha quando passa o mouse */
+  box-shadow: 0px 10px 15px rgba(5, 16, 48, 0.5); /* sombra top */
+  transition-duration: 0.3s; /* tempo da transição */
 }
